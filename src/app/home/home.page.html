@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="danger"> 
+      <h4>Ionic 4 components: Action Sheets</h4>
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="action-sheets-basic-page">
+
+    <ion-searchbar></ion-searchbar>
+
+  <ion-button ion-button block (click)="presentActionSheet()">
+    Show Action Sheet
+  </ion-button>
+
+  <ion-fab vertical="bottom" horizontal="end">
+      <ion-fab-button size="large">Share</ion-fab-button>
+    
+      <ion-fab-list side="top">
+        <ion-fab-button size="large">Facebook</ion-fab-button>
+        <ion-fab-button size="large">Twitter</ion-fab-button>
+        <ion-fab-button size="large">Youtube</ion-fab-button>
+      </ion-fab-list>
+    
+      <ion-fab-list side="start">
+        <ion-button color="medium">Share the app if you like</ion-button>
+      </ion-fab-list>
+    
+    </ion-fab>
+
+</ion-content>
+
